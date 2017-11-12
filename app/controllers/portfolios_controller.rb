@@ -11,6 +11,16 @@ class PortfoliosController < ApplicationController
   def show
   	@portfolio_item=Portfolio.find(params[:id])
   end
+ 
+ def destroy
+ 	@portfolio_item=Portfolio.find(params[:id])
+  @portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: ' Record was removed ' }
+      format.json { head :no_content }
+    end
+  end
+
 
   def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle,:body))
