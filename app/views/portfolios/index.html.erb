@@ -1,5 +1,6 @@
 <h1> Portfolio items </h1>
 
+<%= link_to "Create new item",new_portfolio_path %>
 <% @portfolio_items.each do |portfolio_item| %>
 
 <p> <%= portfolio_item.title %> </p>
@@ -7,6 +8,6 @@
 <p> <%= portfolio_item.body %> </p>
 <p> <%= image_tag portfolio_item.main_image  unless portfolio_item.main_image.nil? %> </p>
 <p> <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil?  %> </p>
-
+<%= link_to "Edit",edit_portfolio_path(portfolio_item.id) %>
 
 <% end %>	
