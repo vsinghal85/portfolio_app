@@ -18,3 +18,5 @@
 
 # i dont want to show my secrets.yml
 /config/secrets.yml
+
+
