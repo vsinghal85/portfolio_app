@@ -21,7 +21,10 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
+.card{
+  margin-top: 10rem;
+  margin-bottom: 10rem
+}
 /*
  * Base structure
  */
@@ -106,8 +109,16 @@ body {
 
 
 /*
- * Cover
+ * 
  */
+
+ .card-block{
+ color: black;
+ text-align: left;
+ }
+ .auth-links a{
+ color: black;
+ }
 
 .cover {
   padding: 0 1.5rem;
