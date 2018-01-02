@@ -52,9 +52,10 @@ class PortfoliosController < ApplicationController
   end
 
   def update
+    
   	@portfolio_item=Portfolio.find(params[:id])
     respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(portfolio_params))
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Blog was successfully updated.' }
         format.json { render :show, status: :ok, location: @portfolio_item }
       else
