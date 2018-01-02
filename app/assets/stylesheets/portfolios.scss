@@ -6,6 +6,14 @@ body {
 
 .navbar {
   margin-bottom: 0;
+  background-color: #292b2c;
+}
+#navbarHeader {
+  background-color: #292b2c;
+}
+
+.row{
+	background-color: #292b2c;
 }
 
 .jumbotron {
@@ -57,4 +65,8 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+.navbar-toggler-icon{
+	  background-color: grey;
 }
