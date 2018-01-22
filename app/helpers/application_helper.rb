@@ -46,7 +46,18 @@ end
     ]
   end
 
+def alerts
 
+  alert = (flash[:alert] || flash[:notice] || flash[:error])
+
+  if alert
+     alert_generator alert
+  end
+end
+
+def alert_generator msg
+    js add_gritter(msg, title: "Vaibhav Singhal Portfolio",sticky: false) 
+end
 
 
 def nav_helper style,tag_type
