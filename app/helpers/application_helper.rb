@@ -23,6 +23,8 @@ end
 
  def nav_items
     [
+
+
       {
         url: root_path,
         title: 'Home'
@@ -42,6 +44,10 @@ end
       {
         url: portfolios_path,
         title: 'Portfolio'
+      },
+       {
+        url: tech_news_path,
+        title: 'Tech News'
       },
     ]
   end
