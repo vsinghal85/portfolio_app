@@ -10,8 +10,22 @@
          	 <%= @blog.body %>
          </p>    
          
-  </div>
 
 
-|
-<%= link_to 'Back', blogs_path %>
+
+<!-- start of comments form -->
+<%= render 'comments/comment_form' %>
+
+<!-- end of comments form -->
+
+<!-- start of comments -->
+<div id="comments" data-blog-id="<%= @blog.id %>">
+<%= render @blog.comments %>
+</div>
+
+<!-- end of comments -->
+
+
+|  </div>
+
+
